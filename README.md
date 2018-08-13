@@ -11,4 +11,5 @@ Usage:
 
 
 Next version:
+
 I will design that user can defined their hotkey event.
