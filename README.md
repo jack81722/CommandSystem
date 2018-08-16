@@ -7,7 +7,7 @@ Usage:
 1.Defined your command and inherit Command class.
 
 
-2.Register defined command to CommandSystem.
+2.Register defined command to CommandSystem by CommondSystem.RegisterCmd(CommandBase command).
 
 
 Next version:
