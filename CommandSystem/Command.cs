@@ -39,5 +39,11 @@ namespace CommandSystem
         {
             throw new NotImplementedException();
         }
+
+
+        protected virtual void Help()
+        {
+            Console.WriteLine("Help will print usage.");
+        }
     }
 }

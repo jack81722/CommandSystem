@@ -25,6 +25,11 @@ namespace CommandSystem
         }
 
         /// <summary>
+        /// Console UI 
+        /// </summary>
+        private InputSystem input;
+
+        /// <summary>
         /// Command dictionary for save and search command instance
         /// </summary>
         private Dictionary<string, CommandBase> cmdDict;
@@ -39,6 +44,8 @@ namespace CommandSystem
         /// </summary>
         private CommandSystem()
         {
+            input = new InputSystem();
+            input.AddDefaultEvent();
             cmdDict = new Dictionary<string, CommandBase>();
             mainTask = Task.Factory.StartNew(Run);
             _Init();
@@ -52,7 +59,7 @@ namespace CommandSystem
             _RegistCmd(new StateCommand(this));
             _RegistCmd(new ClearCommand(this));
             _RegistCmd(new TestCommand(this));
-
+            _RegistCmd(new RepeatCommand(this));
         }
 
         /// <summary>
@@ -105,8 +112,7 @@ namespace CommandSystem
             string str;
             while (true)
             {
-                // Console.Write(">");
-                if ((str = Console.ReadLine()) != null && str.ToUpper() != "EXIT")
+                if ((str = input.ReadLine(">")) != null && str.ToUpper() != "EXIT")
                 {
                     var n = Task.Factory.StartNew(() => Command(str));
                     n.Wait();
@@ -121,4 +127,4 @@ namespace CommandSystem
         }
 
     }
-    }
+}
