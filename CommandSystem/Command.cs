@@ -20,6 +20,8 @@ namespace CommandSystem
         /// </remarks>
         /// <param name="args"></param>
         public abstract void Excute(string[] args);
+
+        public virtual void Excute(string cmd, string[] args) { }
     }
 
     /// <summary>
