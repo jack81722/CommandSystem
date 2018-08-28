@@ -664,24 +664,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Coinmouse-NB\\.nuget\\packages\\": {},
+    "C:\\Users\\Coinmouse\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "E:\\Work Space\\Visual Studio 2017\\CommandSystem\\CommandSystem\\CommandSystem.csproj",
+      "projectUniqueName": "F:\\Work Space\\Visual Studio 2017\\CommandSystem\\trunk\\CommandSystem\\CommandSystem.csproj",
       "projectName": "CommandSystem",
-      "projectPath": "E:\\Work Space\\Visual Studio 2017\\CommandSystem\\CommandSystem\\CommandSystem.csproj",
-      "packagesPath": "C:\\Users\\Coinmouse-NB\\.nuget\\packages\\",
-      "outputPath": "E:\\Work Space\\Visual Studio 2017\\CommandSystem\\CommandSystem\\obj\\",
+      "projectPath": "F:\\Work Space\\Visual Studio 2017\\CommandSystem\\trunk\\CommandSystem\\CommandSystem.csproj",
+      "packagesPath": "C:\\Users\\Coinmouse\\.nuget\\packages\\",
+      "outputPath": "F:\\Work Space\\Visual Studio 2017\\CommandSystem\\trunk\\CommandSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Coinmouse-NB\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Coinmouse\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"

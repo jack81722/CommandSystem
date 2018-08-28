@@ -16,7 +16,7 @@ namespace CommandSystem
         {
             Console.WriteLine("Console UI System (CUS) is online.");
         }
-    }
+    }    
 
     public sealed class ClearCommand : Command<CommandSystem>
     {

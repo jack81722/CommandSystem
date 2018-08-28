@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace CommandSystem
 {
-
     /// <summary>
     /// Console UI System (CUS).
     /// </summary>
@@ -25,29 +25,17 @@ namespace CommandSystem
         }
 
         /// <summary>
-        /// Console UI 
-        /// </summary>
-        private InputSystem input;
-
-        /// <summary>
         /// Command dictionary for save and search command instance
         /// </summary>
         private Dictionary<string, CommandBase> cmdDict;
 
-        /// <summary>
-        /// Task of repeating input
-        /// </summary>
-        private Task mainTask;
 
         /// <summary>
         /// Constructor of Console UI System
         /// </summary>
         private CommandSystem()
-        {
-            input = new InputSystem();
-            input.AddDefaultEvent();
+        { 
             cmdDict = new Dictionary<string, CommandBase>();
-            mainTask = Task.Factory.StartNew(Run);
             _Init();
         }
 
@@ -103,28 +91,28 @@ namespace CommandSystem
         {
             instance._RegistCmd(cmd);
         }
-
-        /// <summary>
-        /// Main function of Console UI System
-        /// </summary>
-        private void Run()
+        
+        public string[] SearchCmd(string keyWord)
         {
-            string str;
-            while (true)
+            string[] cmds = cmdDict.Keys.Where(x => Match(x, keyWord)).ToArray();
+            Array.Sort(cmds);
+            return cmds;
+        }
+
+        public bool Match(string str1, string str2)
+        {
+            bool result = true;
+            int min = Math.Min(str1.Length, str2.Length);
+            for(int i = 0; i < min; i++)
             {
-                if ((str = input.ReadLine(">")) != null && str.ToUpper() != "EXIT")
+                if(!(result = str1[i].Equals(str2[i])))
                 {
-                    var n = Task.Factory.StartNew(() => Command(str));
-                    n.Wait();
+                    break;
                 }
-                else { break; }
             }
+            return result;
         }
-
-        public static void Wait()
-        {
-            instance.mainTask.Wait();
-        }
-
     }
+
+    
 }

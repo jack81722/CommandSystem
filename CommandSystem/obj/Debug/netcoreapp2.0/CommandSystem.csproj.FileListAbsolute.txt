@@ -9,3 +9,14 @@ E:\Work Space\Visual Studio 2017\CommandSystem\CommandSystem\obj\Debug\netcoreap
 E:\Work Space\Visual Studio 2017\CommandSystem\CommandSystem\obj\Debug\netcoreapp2.0\CommandSystem.AssemblyInfo.cs
 E:\Work Space\Visual Studio 2017\CommandSystem\CommandSystem\obj\Debug\netcoreapp2.0\CommandSystem.dll
 E:\Work Space\Visual Studio 2017\CommandSystem\CommandSystem\obj\Debug\netcoreapp2.0\CommandSystem.pdb
+F:\Work Space\Visual Studio 2017\CommandSystem\trunk\CommandSystem\bin\Debug\netcoreapp2.0\CommandSystem.deps.json
+F:\Work Space\Visual Studio 2017\CommandSystem\trunk\CommandSystem\bin\Debug\netcoreapp2.0\CommandSystem.runtimeconfig.json
+F:\Work Space\Visual Studio 2017\CommandSystem\trunk\CommandSystem\bin\Debug\netcoreapp2.0\CommandSystem.runtimeconfig.dev.json
+F:\Work Space\Visual Studio 2017\CommandSystem\trunk\CommandSystem\bin\Debug\netcoreapp2.0\CommandSystem.dll
+F:\Work Space\Visual Studio 2017\CommandSystem\trunk\CommandSystem\bin\Debug\netcoreapp2.0\CommandSystem.pdb
+F:\Work Space\Visual Studio 2017\CommandSystem\trunk\CommandSystem\obj\Debug\netcoreapp2.0\CommandSystem.csprojResolveAssemblyReference.cache
+F:\Work Space\Visual Studio 2017\CommandSystem\trunk\CommandSystem\obj\Debug\netcoreapp2.0\CommandSystem.csproj.CoreCompileInputs.cache
+F:\Work Space\Visual Studio 2017\CommandSystem\trunk\CommandSystem\obj\Debug\netcoreapp2.0\CommandSystem.AssemblyInfoInputs.cache
+F:\Work Space\Visual Studio 2017\CommandSystem\trunk\CommandSystem\obj\Debug\netcoreapp2.0\CommandSystem.AssemblyInfo.cs
+F:\Work Space\Visual Studio 2017\CommandSystem\trunk\CommandSystem\obj\Debug\netcoreapp2.0\CommandSystem.dll
+F:\Work Space\Visual Studio 2017\CommandSystem\trunk\CommandSystem\obj\Debug\netcoreapp2.0\CommandSystem.pdb
